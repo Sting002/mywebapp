@@ -1,84 +1,18 @@
-/* General Page Styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f3f4f6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #2563eb;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.profile {
-  text-align: center;
-  padding: 30px;
-}
-
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid #2563eb;
+  object-fit: cover;
+  border: 3px solid #007bff;
 }
 
-.contact {
-  background-color: white;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
 
-.contact h2 {
-  text-align: center;
-  color: #2563eb;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-button {
-  margin-top: 15px;
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1d4ed8;
-}
-
-footer {
-  text-align: center;
-  background-color: #111827;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
 }
